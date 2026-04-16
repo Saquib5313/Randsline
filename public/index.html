@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Randsline Logistics</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+  
+
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <div class="container">
+
+    <!-- LOGO -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <span class="logo-icon"></span>
+      <strong>Randsline</strong>
+    </a>
+
+    <!-- TOGGLER -->
+    <button class="navbar-toggler border-0" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENU -->
+    <div class="collapse navbar-collapse" id="navMenu">
+
+      <!-- CENTER MENU -->
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item"><a class="nav-link" href="/index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">ABOUT US</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">BLOGS</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact.html">CONTACT</a></li>
+      </ul>
+
+      <!-- RIGHT SIDE -->
+      <div class="d-lg-flex align-items-center gap-4 text-center mt-3 mt-lg-0">
+        <span class="email-text d-none d-lg-block">info@randsline.com</span>
+        <a href="#" class="btn quote-btn">GET A QUOTE</a>
+      </div>
+
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero-section d-md-block d-none" style="height: 100vh;">
+  <div class="container-fluid px-lg-5">
+    
+    <div class="d-flex d-flex-column justify-content-between ">
+ <!-- Left Content -->
+      <div class="text-white content-left ">
+        <h1 class="hero-title">
+          International <br> Shipping
+        </h1>
+
+        <div class="desc-box">
+          Air freight terminals & facilities are subject to strict
+          security measures ensuring you safe product.
+        </div>
+
+        <button class="btn track-btn mt-3">
+          TRACK YOUR ORDER
+        </button>
+
+         <!-- Bottom Image (Parallax Down) -->
+        <div class="mt-4  video-wrapper">
+          <video class="img-fluid plane-img plane-video" id="b6751199-8352-5ddf-7119-b4d3245d4e42-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/68060a1549323df089f74646%2F692d5c39d08719d5947044d0_Untitled%20design%20%281%29_poster.0000000.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+            <source src="https://cdn.prod.website-files.com/68060a1549323df089f74646%2F692d5c39d08719d5947044d0_Untitled%20design%20%281%29_mp4.mp4" data-wf-ignore="true">
+            <source src="https://cdn.prod.website-files.com/68060a1549323df089f74646%2F692d5c39d08719d5947044d0_Untitled%20design%20%281%29_webm.webm" data-wf-ignore="true"></video>
+          <!-- <img src="img/plane.png"
+               class="img-fluid plane-img "
+               alt="Plane"> -->
+        </div>
+
+      </div>
+    
+
+      <!-- Right Image (Parallax Up) -->
+      <div class="ship-wrapper">
+  <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/692d69cfde5cfea958e5524c_luxury-business-ship-loading-cars-shipping%201.webp"
+       class="ship-img parallax-up"
+       alt="Ship">
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FULL WIDTH SECTION (target) -->
+<section class="d-md-block d-none container"></section>
+
+<!-- Phone hero section -->
+<section class="hero-section d-block d-md-none">
+  <div class=" ">
+    
+    <div class="">
+ <!-- Left Content -->
+      <div class="text-white ">
+        <h1 class="hero-title">
+          International <br> Shipping
+        </h1>
+
+        <div class="desc-box">
+          Air freight terminals & facilities are subject to strict
+          security measures ensuring you safe product.
+        </div>
+
+        <button class="btn track-btn mt-3">
+          TRACK YOUR ORDER
+        </button>
+        </div>
+        </div>
+        </div>
+</section>
+
+<section class="my-5 d-block d-md-none">
+  <video class="img-fluid plane-img plane-video" id="b6751199-8352-5ddf-7119-b4d3245d4e42-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/68060a1549323df089f74646%2F692d5c39d08719d5947044d0_Untitled%20design%20%281%29_poster.0000000.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+            <source src="https://cdn.prod.website-files.com/68060a1549323df089f74646%2F692d5c39d08719d5947044d0_Untitled%20design%20%281%29_mp4.mp4" data-wf-ignore="true">
+            <source src="https://cdn.prod.website-files.com/68060a1549323df089f74646%2F692d5c39d08719d5947044d0_Untitled%20design%20%281%29_webm.webm" data-wf-ignore="true"></video>
+</section>
+
+<section class="contaner text-center py-3 border-lg-bottom">
+  <div class="row">
+    <div class="col-lg-3 border-lg-end border-bottom my-2 ">
+      <p class=" text-uppercase fw-medium text-pr-dark"> <i class="bi bi-truck fw-bold me-2 text-pr fs-5 "></i>quality moving</p>
+    </div>
+
+    <div class="col-lg-3 border-lg-end border-bottom my-2">
+      <p class=" text-uppercase fw-medium text-pr-dark"> <i class="bi bi-clock fw-bold me-2 text-pr fs-5 "></i>on-time devlivery</p>
+    </div>
+
+    <div class="col-lg-3 border-lg-end border-bottom my-2">
+      <p class=" text-uppercase fw-medium text-pr-dark"> <i class="bi bi-coin fw-bold me-2 text-pr fs-5 "></i>reliable service fee</p>
+    </div>
+
+    <div class="col-lg-3 border-lg-end border-bottom my-2">
+      <p class=" text-uppercase fw-medium text-pr-dark"> <i class="bi bi-headphones fw-bold me-2 text-pr fs-5 "></i>24/7 online support</p>
+    </div>
+  </div>
+</section>
+<!-- Freight services -->
+<section class="container my-5">
+  <h2 class="text-pr-dark fw-bold">Freight services</h2>
+  <div class="d-flex align-items-center justify-content-between mb-3 ">
+    <div>
+      <p class="p-0 m-0 text-uppercase text-pr fw-semibold">What we do</p>
+    </div>
+    <div>
+      <!-- Decorative lines -->
+      <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="d-flex justify-content-center pt-2 d-none d-md-block"><!-- <div style="border-radius: 0 0 5px 5px; height: 5px; width: 30px; background-color: #0f372e;"></div> -->
+        <div class="mx-2" style=" height: 1px; width: 800px; background:linear-gradient(to left, #ff7a45, transparent) ;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4 mb-3">
+      <div class="service-card card-body p-3">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <div><i class="bi bi-box fs-5 text-pr"></i></div>
+          <div class="number-circle text-pr-dark">01</div>
+         </div>
+          <p class=" text-pr-dark fw-semibold">Sending Parcel</p>
+          <p class="text-muted fs-7">Thanks to our cutting edge technological infrastructure & skilled team, including specialists in supply.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mb-3">
+      <div class="service-card card-body p-3">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <div><i class="bi bi-truck fs-5 text-pr"></i></div>
+          <div class="number-circle text-pr-dark">02</div>
+         </div>
+          <p class=" text-pr-dark fw-semibold">Moving Anything</p>
+          <p class="text-muted fs-7">Thanks to our cutting edge technological infrastructure & skilled team, including specialists in supply.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mb-3">
+      <div class="service-card card-body p-3">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <div><i class="bi bi-airplane-engines fs-5 text-pr"></i></div>
+          <div class="number-circle text-pr-dark">03</div>
+         </div>
+          <p class=" text-pr-dark fw-semibold">Air freight</p>
+          <p class="text-muted fs-7">Thanks to our cutting edge technological infrastructure & skilled team, including specialists in supply.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shipping service -->
+<section class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-lg-6 text-center mb-5">
+      <div>
+        <img src="img/Ship.png" class="img-fluid object-fit zoomship-img" alt="">
+      </div>
+    </div>
+    
+    <div class="col-lg-6 mb-5">
+      <h2 class="text-pr-dark fw-bold fs-1 ">Shipping service <br> around the corners</h2>
+      <p class="p-0  text-pr text-uppercase fs-7 fw-semibold">since from 1990</p>
+
+      <p class="text-muted">Are you looking for a reliable partnership? Our advanced technological infrastructure, coupled with our team of seasoned professionals, makes us the ideal choice. We offer comprehensive solutions in supply chain management, warehousing, distribution, and transportation.</p>
+      <p class="text-muted">Our expertise ensures efficient and seamless operations, tailored to meet your specific needs and drive your business forward.</p>
+
+      <a href="#" class="btn quote-btn">About Us</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Company success case study -->
+ <!-- Title Section -->
+<section class="container my-5">
+  <h2 class="text-pr-dark fw-bold fs-1 text-center">
+    Company <br>success case study
+  </h2>
+
+  <div class="d-flex align-items-center justify-content-center w-100 text-center">
+    <div class="flex-grow-1 mx-2 decorative-line left-line"></div>
+
+    <div>
+      <p class="p-0 m-0 text-pr text-uppercase fw-semibold">portfolio</p>
+    </div>
+
+    <div class="flex-grow-1 mx-2 decorative-line right-line"></div>
+  </div>
+</section>
+<!-- image overlap -->
+  <section class="stack-scroll text-center d-none d-md-block">
+  <div class="stack-container">
+
+  <div class="stack-card card1 position-relative">
+    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=870&auto=format&fit=crop">
+    <div class="caption position-absolute">Freight<br><strong>Bulk Shipment Solution</strong></div>
+  </div>
+
+  <div class="stack-card card2">
+    <img src="https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff?q=80&w=890&auto=format&fit=crop">
+    <div class="caption">Logistics<br><strong>Fast Delivery Network</strong></div>
+  </div>
+
+  <div class="stack-card card3">
+    <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=871&auto=format&fit=crop">
+    <div class="caption">Warehousing<br><strong>Secure Storage</strong></div>
+  </div>
+
+  <!-- <div class="stack-card card4">
+    <img src="https://images.unsplash.com/photo-1774929105734-49177403627e?q=80&w=774&auto=format&fit=crop">
+    <div class="caption">Transport<br><strong>Nationwide Coverage</strong></div>
+  </div> -->
+
+  <div class="stack-card card5">
+    <img src="https://images.unsplash.com/photo-1586528116022-aeda1613c63d?q=80&w=871&auto=format&fit=crop">
+    <div class="caption">Shipping<br><strong>Reliable Service</strong></div>
+  </div>
+
+  <div class="stack-card card6">
+    <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=870&auto=format&fit=crop">
+    <div class="caption">Supply Chain<br><strong>End-to-End Solutions</strong></div>
+  </div>
+
+</div>
+</section>
+
+<section class="mobile-parallax py-4 d-md-none d-block">
+  <div class="container">
+
+    <!-- ITEM -->
+    <div class="parallax-item">
+      <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=870&auto=format&fit=crop" class="img-fluid rounded">
+    </div>
+
+    <div class="parallax-item">
+      <img src="https://images.unsplash.com/photo-1586528116022-aeda1613c63d?q=80&w=871&auto=format&fit=crop" class="img-fluid rounded">
+    </div>
+
+    <div class="parallax-item">
+      <img src="https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff?q=80&w=890&auto=format&fit=crop" class="img-fluid rounded">
+    </div>
+
+    <div class="parallax-item">
+      <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=871&auto=format&fit=crop" class="img-fluid rounded">
+    </div>
+
+    <div class="parallax-item">
+      <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=870&auto=format&fit=crop" class="img-fluid rounded">
+    </div>
+
+    <div class="parallax-item">
+      <img src="https://images.unsplash.com/photo-1581091215367-59ab6b6c4d0f?q=80&w=870&auto=format&fit=crop" class="img-fluid rounded">
+    </div>
+
+  </div>
+</section>
+
+<!-- call us -->
+  <section class="my-5 container">
+    <div class="bg-pr-subt py-3 px-2 text-center text-uppercase fw-semibold">
+    <p class="p-0 m-0">call us for your next shipment. +(123) 456 789 00</p>
+  </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="mt-5 p-5 bg-light">
+    <div class="container">
+      <h2 class="text-pr-dark fw-bold fs-1 ">
+    Company <br> happy users feedback
+  </h2>
+  <div class="d-flex align-items-center justify-content-between mb-5 ">
+    <div>
+      <p class="p-0 m-0 text-uppercase text-pr fw-semibold">testimonials</p>
+    </div>
+    <div>
+      <!-- Decorative lines -->
+      <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="d-flex justify-content-center pt-2"><!-- <div style="border-radius: 0 0 5px 5px; height: 5px; width: 30px; background-color: #0f372e;"></div> -->
+        <div class="mx-2" style=" height: 1px; width: 800px; background:linear-gradient(to left, #ff7a45, transparent) ;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 ">
+    <div class="col-12 col-lg-4">
+      <div class="card card-body text-pr-dark py-5 h-100 border-0 shadow-sm">
+        <p>“ I have been using them for a year now. Everything is detailed & well organized and, of course, damn beautiful. ”</p>
+
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <p class="p-0 m-0 fw-semibold text-pr-dark">Eliana M. Thompson</p>
+          <p class="p-0 m-0"><i class="bi bi-star-fill text-pr"></i>
+          <i class="bi bi-star-fill text-pr"></i>
+        <i class="bi bi-star-fill text-pr"></i>
+      <i class="bi bi-star-fill text-pr"></i>
+    <i class="bi bi-star-fill text-pr"></i></p>
+          </div>
+
+          <div>
+            <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a15009fd46c08d31e2052_bg.png" 
+             style="height: 50px; width: 50px;" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <div class="card card-body text-pr-dark py-5 h-100 border-0 shadow-sm">
+        <p>“Absolutely love the experience so far. Clean design, intuitive layout, and everything just works flawlessly. Can’t ask for more.”</p>
+
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <p class="p-0 m-0 fw-semibold text-pr-dark">Penelope N. Harris</p>
+          <p class="p-0 m-0"><i class="bi bi-star-fill text-pr"></i>
+          <i class="bi bi-star-fill text-pr"></i>
+        <i class="bi bi-star-fill text-pr"></i>
+      <i class="bi bi-star-fill text-pr"></i>
+    <i class="bi bi-star-fill text-pr"></i></p>
+          </div>
+
+          <div>
+            <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a15a627bf7d0dbac86550_bg%20(1).png" 
+             style="height: 50px; width: 50px;" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <div class="card card-body text-pr-dark py-5 h-100 border-0 shadow-sm">
+        <p>“Been relying on this for months—never disappointed.The aesthetics are top-notch, and the structure makes navigation a breeze.”</p>
+
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <p class="p-0 m-0 fw-semibold text-pr-dark">Amelia K. Hamilton</p>
+          <p class="p-0 m-0"><i class="bi bi-star-fill text-pr"></i>
+          <i class="bi bi-star-fill text-pr"></i>
+        <i class="bi bi-star-fill text-pr"></i>
+      <i class="bi bi-star-fill text-pr"></i>
+    <i class="bi bi-star-fill text-pr"></i></p>
+          </div>
+
+          <div>
+            <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a15dffa9abdb0cb91bfa6_bg%20(2).png" 
+             style="height: 50px; width: 50px;" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    </div>
+  </section>
+
+  <!-- logo slider -->
+   <section class="py-5 bg-light">
+    <div class="logo-slider">
+  <div class="logo-track d-flex align-items-center">
+
+    <!-- original logos -->
+    <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a1747ea2dba19951baa06_4.png" alt="">
+    <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a174662e543c250850722_3.png" alt="">
+    <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a1747b1a0871ca6d0c7f3_2.png" alt="">
+    <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a1747900a0443d6771a58_1.png" alt="">
+    <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a174700bf5d1b59d539f4_5.png" alt="">
+
+    <!-- duplicate for infinite effect -->
+    <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a1747ea2dba19951baa06_4.png" alt="">
+    <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a174662e543c250850722_3.png" alt="">
+    <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a1747b1a0871ca6d0c7f3_2.png" alt="">
+    <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a1747900a0443d6771a58_1.png" alt="">
+    <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a174700bf5d1b59d539f4_5.png" alt="">
+
+  </div>
+</div>
+   </section>
+
+   <!-- How we work -->
+   <section class="bg-pr-dark p-5">
+    <div class="container">
+      <h2 class="text-white fw-bold fs-1 ">
+    How we work here <br> is this way only
+  </h2>
+  <div class="d-flex align-items-center justify-content-between mb-5 ">
+    <div>
+      <p class="p-0 m-0 text-uppercase text-pr fw-semibold">how it works</p>
+    </div>
+    <div>
+      <!-- Decorative lines -->
+      <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="d-flex justify-content-center pt-2"><!-- <div style="border-radius: 0 0 5px 5px; height: 5px; width: 30px; background-color: #0f372e;"></div> -->
+        <div class="mx-2" style=" height: 1px; width: 800px; background:linear-gradient(to left, #ff7a45, transparent) ;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-lg-4">
+      <p class="text-white text-uppercase fw-medium">setp 01</p>
+      <hr class="text-white">
+
+      <div>
+        <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a553729012084ecb5bc3d_Contract%20(1).png" 
+        style="width: 60px;"  class="img-fluid boject-fit mb-3" alt="">
+
+        <p class="text-white fw-bold fs-4">The Paperwork</p>
+        <p class="fs-7 text-white opacity-75">Our expertise ensures efficient and seamless operations, tailored to meet your specific needs & drive your business forward.</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <p class="text-white text-uppercase fw-medium">setp 02</p>
+      <hr class="text-white">
+
+      <div>
+        <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a567ab692676b880ca1ba_icon.png" 
+        style="width: 60px;"  class="img-fluid boject-fit mb-3" alt="">
+
+        <p class="text-white fw-bold fs-4">Select Location</p>
+        <p class="fs-7 text-white opacity-75">Our expertise ensures efficient and seamless operations, tailored to meet your specific needs & drive your business forward.</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <p class="text-white text-uppercase fw-medium">setp 02</p>
+      <hr class="text-white">
+
+      <div>
+        <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/680a56ac69bed3f64a8c0245_icon.png" 
+        style="width: 60px;"  class="img-fluid boject-fit mb-3" alt="">
+
+        <p class="text-white fw-bold fs-4">Partners Till The End</p>
+        <p class="fs-7 text-white opacity-75">Our expertise ensures efficient and seamless operations, tailored to meet your specific needs & drive your business forward.</p>
+      </div>
+    </div>  
+  </div>
+
+
+  </div>
+
+   </section>
+
+   <!-- Our team -->
+    <section class="container my-5">
+  <h2 class="text-pr-dark fw-bold fs-1 text-center">
+    Our avengers <br> ready to take challenges
+  </h2>
+
+  <div class="d-flex align-items-center justify-content-center">
+    <div>
+      <div class="d-flex justify-content-center pt-2">
+        <div class="mx-2" style=" height: 1px; width: 500px; background:linear-gradient(to left, #ff7a45, transparent) ;"></div>
+      </div>
+    </div>
+
+    <div>
+      <p class="p-0 m-0 text-pr text-uppercase fw-semibold">our team</p>
+    </div>
+
+    <div class="d-flex justify-content-center pt-2">
+      <div class="mx-2" style=" height: 1px; width: 500px; background:linear-gradient(to right, #ff7a45, transparent) ;"></div>
+    </div>
+  </div>
+</section>
+
+<section class="team-section py-3">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Team Member -->
+      <div class="col-lg-4 col-md-6">
+        <div class="team-card">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="">
+          <div class="team-caption">
+            <h5 class="fw-bold">Jesics Jonson</h5>
+            <p>Worker</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="team-card">
+          <img src="https://images.unsplash.com/photo-1621905252472-943afaa20e20?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <div class="team-caption">
+            <h5 class="fw-bold">Jeson Roy</h5>
+            <p>Worker</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="team-card">
+          <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6" alt="">
+          <div class="team-caption">
+            <h5 class="fw-bold">Robert Jonson</h5>
+            <p>Worker</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Conact -->
+ <section class="contact-section py-3 bg-light position-relative" style="margin-top: 200px;">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT FORM -->
+      <div class="col-lg-5" style="margin-top: -100px;">
+        <div class="quote-box p-4 py-5">
+
+          <h3 class="mb-4 text-white fw-bold">Request for quote</h3>
+
+          <div class="row g-3">
+            <div class="col-6">
+              <label>Your name</label>
+              <input type="text" placeholder="Enter here">
+            </div>
+            <div class="col-6">
+              <label>Email address</label>
+              <input type="email" placeholder="Enter here">
+            </div>
+            <div class="col-6">
+              <label>Freight type</label>
+              <input type="text" placeholder="Enter here">
+            </div>
+            <div class="col-6">
+              <label>Load</label>
+              <input type="text" placeholder="Enter here">
+            </div>
+          </div>
+
+          <button class="btn quote-btn w-100 mt-4">Get A Free Quote</button>
+
+          <!-- Contact Info -->
+          <div class="contact-info mt-4">
+            <div class="d-flex align-items-center mb-3">
+              <i class="bi bi-telephone-fill me-3"></i>
+              <div>
+                <small>FEEL FREE TO CALL US</small>
+                <h6 class="mb-0">+(123) 456 789 00</h6>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <i class="bi bi-envelope-fill me-3"></i>
+              <div>
+                <small>EMAIL US NOW</small>
+                <h6 class="mb-0">info@neomx.com</h6>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="col-lg-6 offset-lg-1 mt-5 mt-lg-0">
+
+        <h2 class="fw-bold text-pr-dark mb-3">
+          So many fun facts <br> about service
+        </h2>
+
+        <div class="d-flex align-items-center mb-4">
+          <span class="text-pr me-3 small fw-semibold">FUN FACT</span>
+          <div class="line"></div>
+        </div>
+
+        <div class="fact-item d-flex justify-content-between align-items-center">
+          <p class="mb-0 text-pr-dark fw-bold">Assets</p>
+          <h3 class="text-pr fw-bold">100+</h3>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="fact-item d-flex justify-content-between align-items-center">
+          <p class="mb-0 text-pr-dark fw-bold">Permit we have</p>
+          <h3 class="text-pr fw-bold">1k+</h3>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- challange -->
+    <section class="container my-5">
+  <h2 class="text-pr-dark fw-bold fs-1 text-center">
+    Our avengers <br> ready to take challenges
+  </h2>
+
+  <div class="d-flex align-items-center justify-content-center">
+    <div>
+      <div class="d-flex justify-content-center pt-2">
+        <div class="mx-2" style=" height: 1px; width: 500px; background:linear-gradient(to left, #ff7a45, transparent) ;"></div>
+      </div>
+    </div>
+
+    <div>
+      <p class="p-0 m-0 text-pr text-uppercase fw-semibold">our team</p>
+    </div>
+
+    <div class="d-flex justify-content-center pt-2">
+      <div class="mx-2" style=" height: 1px; width: 500px; background:linear-gradient(to right, #ff7a45, transparent) ;"></div>
+    </div>
+  </div>
+</section>
+
+<section class="freight-section container py-5">
+
+  <!-- ITEM 1 (OPEN) -->
+  <div class="freight-item active">
+
+    <div class="freight-header d-flex justify-content-between align-items-center">
+      <h3 class="text-pr-dark">Road Freight</h3>
+      <div class="toggle-btn">−</div>
+    </div>
+
+    <div class="freight-body row align-items-center mt-4">
+
+      <!-- LEFT PRICE BOX -->
+      <div class="col-lg-4">
+        <div class="price-box">
+          <div class="overlay"></div>
+          <div class="price-content text-center">
+            <p class="small">START FROM</p>
+            <h1>$19</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURES -->
+      <div class="col-lg-5">
+        <ul class="feature-list">
+          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Cost: $500 per shipment</li>
+          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Weight Limit: Up to 1,000 lbs</li>
+          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Volume Limit: Up to 10 cubic meters</li>
+          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Door-to-door delivery</li>
+          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Basic insurance coverage</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="col-lg-3">
+        <ul class="feature-list">
+          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Online shipment tracking</li>
+          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Customer support</li>
+        </ul>
+
+        <button class="purchase-btn mt-3">PURCHASE NOW</button>
+      </div>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- ITEM 2 -->
+  <div class="freight-item">
+    <div class="freight-header d-flex justify-content-between align-items-center">
+      <h3 class="text-pr-dark">Ship Freight</h3>
+      <div class="toggle-btn">+</div>
+    </div>
+    <div class="freight-body row align-items-center mt-4">
+
+      <!-- LEFT PRICE BOX -->
+      <div class="col-lg-4">
+        <div class="price-box">
+          <div class="overlay"></div>
+          <div class="price-content text-center">
+            <p class="small">START FROM</p>
+            <h1>$99</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURES -->
+      <div class="col-lg-5">
+        <ul class="feature-list">
+          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Cost: $9800 per shipment</li>
+          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Weight Limit: Up to 9,000 lbs</li>
+          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Volume Limit: Up to 10 cubic meters</li>
+          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Door-to-door delivery</li>
+          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Basic insurance coverage</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="col-lg-3">
+        <ul class="feature-list">
+          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Online shipment tracking</li>
+          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Customer support</li>
+        </ul>
+
+        <button class="purchase-btn mt-3">PURCHASE NOW</button>
+      </div>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- ITEM 3 -->
+  <div class="freight-item">
+    <div class="freight-header d-flex justify-content-between align-items-center">
+      <h3 class="text-pr-dark">Airplane Freight</h3>
+      <div class="toggle-btn">+</div>
+    </div>
+    <div class="freight-body row align-items-center mt-4">
+
+      <!-- LEFT PRICE BOX -->
+      <div class="col-lg-4">
+        <div class="price-box">
+          <div class="overlay"></div>
+          <div class="price-content text-center">
+            <p class="small">START FROM</p>
+            <h1>$199</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURES -->
+      <div class="col-lg-5">
+        <ul class="feature-list">
+          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Cost: $59820 per shipment</li>
+          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Weight Limit: Up to 998700 lbs</li>
+          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Volume Limit: Up to 10 cubic meters</li>
+          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Door-to-door delivery</li>
+          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Basic insurance coverage</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="col-lg-3">
+        <ul class="feature-list">
+          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Online shipment tracking</li>
+          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Customer support</li>
+        </ul>
+
+        <button class="purchase-btn mt-3">PURCHASE NOW</button>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!-- contaner background image -->
+<section class="bg-section "></section>
+
+<!-- News -->
+   <section class="bg-pr-dark p-5">
+    <div class="container">
+      <h2 class="text-white fw-bold fs-1 ">
+    Company news <br>& insights
+  </h2>
+  <div class="d-flex align-items-center justify-content-between mb-5 ">
+    <div>
+      <p class="p-0 m-0 text-uppercase text-pr fw-semibold">insights</p>
+    </div>
+    <div>
+      <!-- Decorative lines -->
+      <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="d-flex justify-content-center pt-2"><!-- <div style="border-radius: 0 0 5px 5px; height: 5px; width: 30px; background-color: #0f372e;"></div> -->
+        <div class="mx-2" style=" height: 1px; width: 800px; background:linear-gradient(to left, #ff7a45, transparent) ;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-lg-4">
+      <div class="card border-0 bg-pr-dark h-100">
+        <div class="team-card mb-3">
+          <img src="https://plus.unsplash.com/premium_photo-1661901122974-e280f0c1efab?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div >
+          <p class="text-pr fs-7 text-uppercase">April 28, 2025</p>
+        <p class="fw-bold text-white fs-3">Fast roads, safe loads, that’s what Neomex promises.</p>
+        <div class="">
+          <a href="#" class="text-decoration-none text-white opacity-75 text-uppercase fw-semibold">Shipping</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <div class="card border-0 bg-pr-dark h-100">
+        <div class="team-card mb-3">
+          <img src="https://images.unsplash.com/photo-1700952633135-fd1d2a74a557?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="">
+          <p class="text-pr fs-7 text-uppercase">April 28, 2025</p>
+        <p class="fw-bold text-white fs-3">When trust matters most, Neomex always delivers beyond.</p>
+        <div>
+          <a href="#" class="text-decoration-none text-white opacity-75 text-uppercase fw-semibold">Freight</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4">
+
+      <div class="card border-0 bg-pr-dark h-100">
+        <div class="team-card mb-3">
+          <img src="https://images.unsplash.com/photo-1734213025320-1aa0c14d01b4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="">
+          <p class="text-pr fs-7 text-uppercase">April 28, 2025</p>
+        <p class="fw-bold text-white fs-3">Neomex: turning complex routes into simple daily journeys.</p>
+        <div>
+          <a href="#" class="text-decoration-none text-white opacity-75 text-uppercase fw-semibold">transport</a>
+        </div>
+        </div>
+      </div>
+      
+    </div>  
+  </div>
+
+  </div>
+   </section>
+
+   <!-- Footer -->
+    <section class="footer-section py-5">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- LEFT -->
+      <div class="col-12 col-lg-3">
+        <h4 class="fw-bold text-pr-dark mb-3">Randsline</h4>
+
+        <p class="text-muted mb-4">
+          A logistics firm is a business entity formed by one or more logistics experts to engage in the management and coordination of transportation, warehousing, and distribution of goods.
+        </p>
+
+        <a href="#" class="d-flex align-items-center text-decoration-none fw-semibold text-pr-dark">
+          <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/68067bf53c69b3d0ea47bf91_Email.png"
+               style="width: 28px; height: 28px;"
+               class="me-2" alt="">
+          info@randsline.com
+        </a>
+      </div>
+
+      <!-- PAGES -->
+      <div class="col-6 col-lg-3 ps-5">
+        <h6 class="footer-title">Pages</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- UTILITIES -->
+      <div class="col-6 col-lg-3">
+        <h6 class="footer-title">Utility Pages</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Privacy Policies</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-12 col-lg-3">
+        <h6 class="footer-title">Contact Us</h6>
+        <ul class="list-unstyled footer-links">
+          <li>
+            <i class="bi bi-telephone-fill me-2 text-pr"></i> +91 0987654432
+          </li>
+          <li>
+            <i class="bi bi-envelope-fill me-2 text-pr"></i> info@randsline.com
+          </li>
+          <li>
+            <i class="bi bi-clock-fill me-2 text-pr"></i> Weekdays 10:00 am - 9:00 pm (EST)
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="border-top pt-4 mt-5 text-center">
+      <p class="mb-0 text-muted small">
+        © 2026 Randsline Logistics. All rights reserved.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+   
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Randsline Logistics</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="style/style.css">
+  <script src="script/script.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <div class="container">
+
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <span class="logo-icon"></span>
+      <strong>Randsline</strong>
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="/index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">ABOUT US</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">BLOGS</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact.html">CONTACT</a></li>
+      </ul>
+
+      <div class="d-flex align-items-center gap-4">
+        <span class="email-text d-none d-lg-block">info@randsline.com</span>
+        <a href="#" class="btn quote-btn">GET A QUOTE</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero-section py-5" style="height: 80vh;">
+  <div class="container-fluid px-lg-5">
+    
+    <div class="text-center ">
+ <!-- Left Content -->
+      <div class="text-white ">
+        <h1 class="hero-title mb-2">
+          Contact Us
+        </h1>
+        <p class="p-0 m-0 text-white opacity-75">Our expertise ensures efficient and seamless operations, tailored to meet your specific <br> needs and drive your business forward.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- why choose us -->
+<section class="shipping-section py-5 border-bottom">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- LEFT IMAGE -->
+      <div class="col-lg-6">
+        <div class="image-wrapper">
+          <img src="https://images.unsplash.com/photo-1635434473843-bac9feff5e8e?q=80&w=445&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+               class="img-fluid main-img">
+        </div>
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="col-lg-6">
+
+       <div class="mb-5">
+         <h2 class="fw-bold text-pr-dark fs-1">
+          Get in touch with us <br> anytime from anywhere
+        </h2>
+         <p class="text-pr fs-8 text-uppercase">get in touch</p>
+       </div>
+        <!-- Feature 1 -->
+       <div class="mb-4">
+            <p class="text-muted fs-7 p-0 m-0 mb-2 text-uppercase">Support Center 24/7</p>
+            <h5 class="text-pr-dark fs-2 fw-bold">+123 (456) 789 00</h5>
+          </div>
+
+        <!-- Feature 2 -->
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                 <div>
+            <p class="text-muted fs-7 p-0 m-0 mb-2 text-uppercase">our location</p>
+            <p class="text-pr-dark fw-semibold">12/A, New Booston Tower, NYC, US</p>
+          </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                 <div>
+            <p class="text-muted fs-7 p-0 m-0 mb-2 text-uppercase">email address</p>
+            <a href="#" class="d-flex align-items-center text-decoration-none fw-semibold text-pr-dark">
+          info@randsline.com
+        </a>
+          </div>
+            </div>
+        </div>
+
+        <!-- BUTTON -->
+        <a href="#" class="btn quote-btn  mt-3">GET DIRECTION</a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Question and map -->
+<section class="contact-section py-5">
+  <div class="container">
+    <div class="row ">
+
+      <!-- FORM -->
+      <!-- LEFT FORM -->
+      <div class="col-lg-6 mt-3" >
+        <div class="quote-box p-4 py-5">
+
+          <h3 class="mb-4 text-white fw-bold">Ask more question</h3>
+
+          <div class="row g-3">
+            <div class="col-6">
+              <label>Your name</label>
+              <input type="text" placeholder="Enter here">
+            </div>
+            <div class="col-6">
+              <label>Email address</label>
+              <input type="email" placeholder="Enter here">
+            </div>
+            <div class="col-12 col-lg-12">
+                <label for="">Your message</label>
+                <textarea name="" id="" rows="10" placeholder="Enter here"></textarea>
+            </div>
+          </div>
+
+          <button class="btn quote-btn w-100 mt-4">Get A Free Quote</button>
+
+          
+
+        </div>
+      </div>
+
+      <!-- MAP -->
+      <div class="col-12 col-lg-6">
+        <div class="map-box h-100">
+          <iframe 
+            src="https://www.google.com/maps?q=Bangalore&output=embed"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Footer -->
+    <section class="footer-section py-5">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- LEFT -->
+      <div class="col-12 col-lg-3">
+        <h4 class="fw-bold text-pr-dark mb-3">Randsline</h4>
+
+        <p class="text-muted mb-4">
+          A logistics firm is a business entity formed by one or more logistics experts to engage in the management and coordination of transportation, warehousing, and distribution of goods.
+        </p>
+
+        <a href="#" class="d-flex align-items-center text-decoration-none fw-semibold text-pr-dark">
+          <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/68067bf53c69b3d0ea47bf91_Email.png"
+               style="width: 28px; height: 28px;"
+               class="me-2" alt="">
+          info@randsline.com
+        </a>
+      </div>
+
+      <!-- PAGES -->
+      <div class="col-6 col-lg-3 ps-5">
+        <h6 class="footer-title">Pages</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- UTILITIES -->
+      <div class="col-6 col-lg-3">
+        <h6 class="footer-title">Utility Pages</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Privacy Policies</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-12 col-lg-3">
+        <h6 class="footer-title">Contact Us</h6>
+        <ul class="list-unstyled footer-links">
+          <li>
+            <i class="bi bi-telephone-fill me-2 text-pr"></i> +91 0987654432
+          </li>
+          <li>
+            <i class="bi bi-envelope-fill me-2 text-pr"></i> info@randsline.com
+          </li>
+          <li>
+            <i class="bi bi-clock-fill me-2 text-pr"></i> Weekdays 10:00 am - 9:00 pm (EST)
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="border-top pt-4 mt-5 text-center">
+      <p class="mb-0 text-muted small">
+        © 2026 Randsline Logistics. All rights reserved.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>
