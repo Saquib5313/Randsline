@@ -77,24 +77,25 @@ gsap.fromTo(".zoomship-img",
 
 
 
-gsap.registerPlugin(ScrollTrigger);
 
-const cards = gsap.utils.toArray(".stack-card");
+const cards = document.querySelectorAll(".stack-card");
+const section = document.querySelector(".stack-scroll");
 
-cards.forEach((card, i) => {
-  if (i === 0) return; // first stays
+window.addEventListener("scroll", () => {
+  const sectionTop = section.offsetTop;
+  const scroll = window.scrollY - sectionTop;
 
-  gsap.to(card, {
-    top: 0, // 🔥 slide up and cover previous
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".stack-scroll",
-      start: () => "top -" + (i * 100) + "%",
-      end: () => "top -" + ((i + 1) * 100) + "%",
-      scrub: true
+  cards.forEach((card, i) => {
+    const trigger = i * 300;
+
+    if (scroll > trigger) {
+      card.style.transform = "translateY(0)";
+    } else {
+      card.style.transform = "translateY(100%)";
     }
   });
 });
+
 
 
 
@@ -133,22 +134,5 @@ window.addEventListener("scroll", function () {
   progress.style.height = scrollPercent * 100 + "%";
 });
 
-
-// Mobile parallelax
-
-window.addEventListener("scroll", function () {
-  const items = document.querySelectorAll(".parallax-item");
-
-  items.forEach((item, index) => {
-    const rect = item.getBoundingClientRect();
-    const speed = (index + 1) * 0.3;
-
-    // only animate when visible
-    if (rect.top < window.innerHeight) {
-      let move = (window.innerHeight - rect.top) * speed * 0.1;
-      item.style.transform = `translateY(${move}px)`;
-    }
-  });
-});
 
 

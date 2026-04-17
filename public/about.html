@@ -22,35 +22,46 @@
 </head>
 <body>
 
+  <div style="overflow: hidden;">
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
   <div class="container">
 
+    <!-- LOGO -->
     <a class="navbar-brand d-flex align-items-center gap-2" href="#">
       <span class="logo-icon"></span>
       <strong>Randsline</strong>
     </a>
 
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <!-- TOGGLER -->
+    <button class="navbar-toggler border-0 shadow-none" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- MENU -->
     <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav mx-auto">
+
+      <!-- CENTER MENU -->
+      <ul class="navbar-nav mx-auto text-center">
         <li class="nav-item"><a class="nav-link" href="/index.html">HOME</a></li>
         <li class="nav-item"><a class="nav-link" href="/about.html">ABOUT US</a></li>
         <li class="nav-item"><a class="nav-link" href="#">BLOGS</a></li>
         <li class="nav-item"><a class="nav-link" href="/contact.html">CONTACT</a></li>
       </ul>
 
-      <div class="d-flex align-items-center gap-4">
+      <!-- RIGHT SIDE -->
+      <div class="d-lg-flex align-items-center gap-3 text-center mt-3 mt-lg-0">
         <span class="email-text d-none d-lg-block">info@randsline.com</span>
         <a href="#" class="btn quote-btn">GET A QUOTE</a>
       </div>
+
     </div>
 
   </div>
 </nav>
+
 
 <!-- HERO -->
 
@@ -342,7 +353,10 @@
     </div>
   </div>
 </section>
+</div>
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

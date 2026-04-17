@@ -56,7 +56,15 @@ body {
 /* NAVBAR BASE */
 .custom-navbar {
   background: var(--primary-dark);
-  padding: 15px 0;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+/* LOGO */
+.navbar-brand {
+  font-size: 20px;
+  color: #fff !important;
 }
 
 /* LINKS */
@@ -64,6 +72,7 @@ body {
   color: #fff !important;
   font-weight: 500;
   margin: 0 10px;
+  transition: 0.3s;
 }
 
 .nav-link:hover {
@@ -77,6 +86,7 @@ body {
   padding: 8px 18px;
   font-size: 14px;
   border-radius: 4px;
+  transition: 0.3s;
 }
 
 .quote-btn:hover {
@@ -84,22 +94,30 @@ body {
   color: var(--primary-dark);
 }
 
-/* MOBILE FIX */
+/* REMOVE TOGGLER BORDER */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* MOBILE STYLING */
 @media (max-width: 991px) {
 
   .navbar-collapse {
     background: var(--primary-dark);
     padding: 20px;
     margin-top: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
+    text-align: center;
   }
 
   .nav-link {
-    margin: 10px 0;
+    margin: 12px 0;
+    font-size: 16px;
   }
 
   .quote-btn {
     width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -331,140 +349,129 @@ body {
   }
 }
 
+/* SCROLL AREA */
 .stack-scroll {
-  height: 600vh; /* 🔥 increase for smooth ending */
-  margin-bottom: 0;
+  /* height: 500vh; */
+  position: relative;
 }
 
+/* STICKY */
 .stack-container {
   position: sticky;
-  top: 0;
-  height: 100vh;
+  top: 0px; /* navbar height */
+  bottom: 0;
+  height: calc(100vh - 80px);
   overflow: hidden;
 }
 
-/* each card full size */
+/* CARD BASE */
 .stack-card {
   position: absolute;
-  width: 100%;
-  height: auto;
-  top: 100%; /* start from bottom */
-  left: 0;
+  inset: 0;
+
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateY(100%);
+  transition: transform 0.6s ease;
 }
 
+/* FIRST CARD VISIBLE */
+.card1 {
+  transform: translateY(0);
+}
 
+/* IMAGE */
 .stack-card img {
-  width: 70%;
+  width: 65%;
   height: 70%;
   object-fit: cover;
+  border-radius: 12px;
 }
 
-/* first image visible initially */
-.card1 {
-  top: 0;
-  z-index: 1;
+/* OVERLAY */
+.stack-card::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 70%;
+  background: rgba(0,0,0,0.4);
+  border-radius: 12px;
 }
-.card2 { z-index: 2; }
-.card3 { z-index: 3; }
-/* .card4 { z-index: 4; } */
-.card5 { z-index: 5; }
-.card6 { z-index: 6; }
 
+/* TEXT */
 .caption {
   position: absolute;
-  bottom: 5%;
-  left: 0%;
+  bottom: 15%;
+  left: 20%;
   color: #fff;
-  z-index: 10;
-  width: 60%;
+}
+
+/* STACK ORDER */
+.card1 { z-index: 1; }
+.card2 { z-index: 2; }
+.card3 { z-index: 3; }
+.card4 { z-index: 4; }
+.card5 { z-index: 5; }
+
+/* TEXT */
+.caption {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  color: #fff;
+  width: 50%;
   font-size: 14px;
-  letter-spacing: 1px;
 }
 
 .caption strong {
   display: block;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
 }
 
-/* overlay only on image area */
+/* OVERLAY */
 .stack-card::after {
   content: "";
   position: absolute;
-  top: 15%;
-  left: 15%;
-  width: 70%;
+  width: 65%;
   height: 70%;
-  z-index: 5;
-  pointer-events: none;
+  background: rgba(0,0,0,0.4);
+  border-radius: 12px;
 }
 
+/* 📱 MOBILE */
 @media (max-width: 768px) {
 
   .stack-scroll {
-    height: 500vh; 
+    height: 400vh;
   }
 
   .stack-card img {
     width: 90%;
-    height: 100%;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .caption {
-    bottom: 25%;
-    left: 5%;
-    width: 90%;
-    font-size: 12px;
-  }
-
-  .caption strong {
-    font-size: 16px;
+    height: 60%;
   }
 
   .stack-card::after {
-    top: 20%;
-    left: 5%;
     width: 90%;
     height: 60%;
   }
 
+  .caption {
+    left: 8%;
+    width: 85%;
+    font-size: 12px;
+    bottom: 15%;
+  }
+
+  .caption strong {
+    font-size: 18px;
+  }
 }
 
-/* Mobile */
-.mobile-parallax {
-  overflow: hidden;
-  position: relative;
-}
 
-/* each card */
-.parallax-item {
-  position: relative;
-  margin-top: -80px; /* 🔥 overlap */
-  z-index: 1;
-  transition: transform 0.2s ease-out;
-}
-
-/* first one normal */
-.parallax-item:first-child {
-  margin-top: 0;
-}
-
-/* layering */
-.parallax-item:nth-child(1) { z-index: 1; }
-.parallax-item:nth-child(2) { z-index: 2; }
-.parallax-item:nth-child(3) { z-index: 3; }
-.parallax-item:nth-child(4) { z-index: 4; }
-.parallax-item:nth-child(5) { z-index: 5; }
-.parallax-item:nth-child(6) { z-index: 6; }
-
-.parallax-item img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 12px;
-}
 
 /* Logo slider */
 .logo-slider {
@@ -749,29 +756,40 @@ hr {
   border-color: #ccc;
 }
 
-/* HIDE BODY (for collapsed items) */
+/* ACCORDION FIX */
 .freight-body {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: max-height 0.5s ease;
 }
 
 .freight-item.active .freight-body {
-  max-height: 500px; /* enough for content */
+  max-height: 1000px; /* increased so content never cuts */
 }
 
+/* LIST FIX */
+.feature-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.feature-list li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* MOBILE IMPROVEMENT */
 @media (max-width: 768px) {
   .price-box {
-    height: 200px;
-    margin-bottom: 20px;
+    height: 180px;
   }
 
   .price-content h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
 
-  .purchase-btn {
-    width: 100%;
+  .freight-header h5 {
+    font-size: 18px;
   }
 }
 
@@ -789,6 +807,17 @@ hr {
   justify-content: center;
 }
 
+/* 📱 MOBILE FIX */
+@media (max-width: 768px) {
+  .bg-section {
+    /* background-size: contain;   show full image */
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    min-height: auto;           /* prevent extra empty space */
+    padding: 100px 20px;        /* maintain spacing */
+  }
+}
 
 /* make card vertical layout */
 .card {

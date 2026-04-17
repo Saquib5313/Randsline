@@ -34,12 +34,9 @@
     </a>
 
     <!-- TOGGLER -->
-    <button class="navbar-toggler border-0" type="button"
+    <button class="navbar-toggler border-0 shadow-none" type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navMenu"
-            aria-controls="navMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
+            data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -55,7 +52,7 @@
       </ul>
 
       <!-- RIGHT SIDE -->
-      <div class="d-lg-flex align-items-center gap-4 text-center mt-3 mt-lg-0">
+      <div class="d-lg-flex align-items-center gap-3 text-center mt-3 mt-lg-0">
         <span class="email-text d-none d-lg-block">info@randsline.com</span>
         <a href="#" class="btn quote-btn">GET A QUOTE</a>
       </div>
@@ -66,6 +63,7 @@
 </nav>
 
 
+<div style="overflow: hidden;">
 <!-- HERO -->
 
 <section class="hero-section d-md-block d-none" style="height: 100vh;">
@@ -170,13 +168,8 @@
     <div>
       <p class="p-0 m-0 text-uppercase text-pr fw-semibold">What we do</p>
     </div>
-    <div>
-      <!-- Decorative lines -->
-      <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="d-flex justify-content-center pt-2 d-none d-md-block"><!-- <div style="border-radius: 0 0 5px 5px; height: 5px; width: 30px; background-color: #0f372e;"></div> -->
-        <div class="mx-2" style=" height: 1px; width: 800px; background:linear-gradient(to left, #ff7a45, transparent) ;">
-        </div>
-      </div>
-    </div>
+    <div class="flex-grow-1 mx-2 decorative-line left-line"></div>
+
   </div>
 
   <div class="row">
@@ -330,7 +323,7 @@
   </section>
 
   <!-- Testimonial -->
-  <section class="mt-5 p-5 bg-light">
+  <section class="mt-5 py-5 bg-light">
     <div class="container">
       <h2 class="text-pr-dark fw-bold fs-1 ">
     Company <br> happy users feedback
@@ -339,13 +332,7 @@
     <div>
       <p class="p-0 m-0 text-uppercase text-pr fw-semibold">testimonials</p>
     </div>
-    <div>
-      <!-- Decorative lines -->
-      <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="d-flex justify-content-center pt-2"><!-- <div style="border-radius: 0 0 5px 5px; height: 5px; width: 30px; background-color: #0f372e;"></div> -->
-        <div class="mx-2" style=" height: 1px; width: 800px; background:linear-gradient(to left, #ff7a45, transparent) ;">
-        </div>
-      </div>
-    </div>
+    <div class="flex-grow-1 mx-2 decorative-line left-line"></div>
   </div>
 
   <div class="row g-4 ">
@@ -443,7 +430,7 @@
    </section>
 
    <!-- How we work -->
-   <section class="bg-pr-dark p-5">
+   <section class="bg-pr-dark py-5">
     <div class="container">
       <h2 class="text-white fw-bold fs-1 ">
     How we work here <br> is this way only
@@ -454,10 +441,7 @@
     </div>
     <div>
       <!-- Decorative lines -->
-      <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="d-flex justify-content-center pt-2"><!-- <div style="border-radius: 0 0 5px 5px; height: 5px; width: 30px; background-color: #0f372e;"></div> -->
-        <div class="mx-2" style=" height: 1px; width: 800px; background:linear-gradient(to left, #ff7a45, transparent) ;">
-        </div>
-      </div>
+      <div class="flex-grow-1 mx-2 decorative-line left-line" style="width: 500px;"></div>
     </div>
   </div>
 
@@ -509,25 +493,21 @@
 
    <!-- Our team -->
     <section class="container my-5">
-  <h2 class="text-pr-dark fw-bold fs-1 text-center">
+  <h2 class="p-0 m-0 text-pr-dark fw-bold fs-1 text-center">
     Our avengers <br> ready to take challenges
   </h2>
 
-  <div class="d-flex align-items-center justify-content-center">
-    <div>
-      <div class="d-flex justify-content-center pt-2">
-        <div class="mx-2" style=" height: 1px; width: 500px; background:linear-gradient(to left, #ff7a45, transparent) ;"></div>
-      </div>
-    </div>
+  <div class="d-flex align-items-center justify-content-center w-100 text-center">
+    <div class="flex-grow-1 mx-2 decorative-line left-line"></div>
 
     <div>
       <p class="p-0 m-0 text-pr text-uppercase fw-semibold">our team</p>
     </div>
 
-    <div class="d-flex justify-content-center pt-2">
-      <div class="mx-2" style=" height: 1px; width: 500px; background:linear-gradient(to right, #ff7a45, transparent) ;"></div>
-    </div>
+    <div class="flex-grow-1 mx-2 decorative-line right-line"></div>
   </div>
+
+  
 </section>
 
 <section class="team-section py-3">
@@ -630,21 +610,25 @@
           So many fun facts <br> about service
         </h2>
 
-        <div class="d-flex align-items-center mb-4">
-          <span class="text-pr me-3 small fw-semibold">FUN FACT</span>
-          <div class="line"></div>
-        </div>
+        <div class="d-flex align-items-center justify-content-between mb-5 ">
+    <div>
+      <p class="p-0 m-0 text-uppercase text-pr fw-semibold">FUN FACT</p>
+    </div>
+    <div class="flex-grow-1 mx-2 decorative-line left-line" style="width: 50px !important;"></div>
+  </div>
+
+       
 
         <div class="fact-item d-flex justify-content-between align-items-center">
-          <p class="mb-0 text-pr-dark fw-bold">Assets</p>
-          <h3 class="text-pr fw-bold">100+</h3>
+          <p class="mb-0 text-pr-dark fs-3 fw-bold">Assets</p>
+          <h3 class="text-pr fs-3 fw-bold">100+</h3>
         </div>
 
         <div class="divider"></div>
 
         <div class="fact-item d-flex justify-content-between align-items-center">
-          <p class="mb-0 text-pr-dark fw-bold">Permit we have</p>
-          <h3 class="text-pr fw-bold">1k+</h3>
+          <p class="mb-0 text-pr-dark fs-3 fw-bold">Permit we have</p>
+          <h3 class="text-pr fw-bold fs-3">1k+</h3>
         </div>
 
       </div>
@@ -659,157 +643,153 @@
     Our avengers <br> ready to take challenges
   </h2>
 
-  <div class="d-flex align-items-center justify-content-center">
-    <div>
-      <div class="d-flex justify-content-center pt-2">
-        <div class="mx-2" style=" height: 1px; width: 500px; background:linear-gradient(to left, #ff7a45, transparent) ;"></div>
-      </div>
-    </div>
+  <div class="d-flex align-items-center justify-content-center w-100 text-center">
+    <div class="flex-grow-1 mx-2 decorative-line left-line"></div>
 
     <div>
       <p class="p-0 m-0 text-pr text-uppercase fw-semibold">our team</p>
     </div>
 
-    <div class="d-flex justify-content-center pt-2">
-      <div class="mx-2" style=" height: 1px; width: 500px; background:linear-gradient(to right, #ff7a45, transparent) ;"></div>
-    </div>
+    <div class="flex-grow-1 mx-2 decorative-line right-line"></div>
   </div>
 </section>
 
+
 <section class="freight-section container py-5">
 
-  <!-- ITEM 1 (OPEN) -->
-  <div class="freight-item active">
-
+  <!-- ITEM -->
+  <div class="freight-item mb-4">
     <div class="freight-header d-flex justify-content-between align-items-center">
-      <h3 class="text-pr-dark">Road Freight</h3>
-      <div class="toggle-btn">−</div>
+      <h5 class="text-pr-dark m-0 fw-bold">Road Freight</h5>
+      <div class="toggle-btn">+</div>
     </div>
 
-    <div class="freight-body row align-items-center mt-4">
+    <div class="freight-body mt-3">
+      <div class="row g-4 align-items-center">
 
-      <!-- LEFT PRICE BOX -->
-      <div class="col-lg-4">
-        <div class="price-box">
-          <div class="overlay"></div>
-          <div class="price-content text-center">
-            <p class="small">START FROM</p>
-            <h1>$19</h1>
+        <!-- PRICE -->
+        <div class="col-12 col-md-4 text-center">
+          <div class="price-box">
+            <div class="overlay"></div>
+            <div class="price-content">
+              <p class="small">START FROM</p>
+              <h1>$19</h1>
+            </div>
           </div>
         </div>
+
+        <!-- FEATURES LEFT -->
+        <div class="col-12 col-md-5">
+          <ul class="feature-list">
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Cost: $500 per shipment</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Weight Limit: Up to 1,000 lbs</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Volume Limit: Up to 10 cubic meters</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Door-to-door delivery</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Basic insurance coverage</li>
+          </ul>
+        </div>
+
+        <!-- FEATURES RIGHT + BUTTON -->
+        <div class="col-12 col-md-3 text-md-start ">
+          <ul class="feature-list mb-3">
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Online shipment tracking</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Customer support</li>
+          </ul>
+
+          <button class="purchase-btn w-100">PURCHASE NOW</button>
+        </div>
+
       </div>
-
-      <!-- FEATURES -->
-      <div class="col-lg-5">
-        <ul class="feature-list">
-          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Cost: $500 per shipment</li>
-          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Weight Limit: Up to 1,000 lbs</li>
-          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Volume Limit: Up to 10 cubic meters</li>
-          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Door-to-door delivery</li>
-          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Basic insurance coverage</li>
-        </ul>
-      </div>
-
-      <!-- RIGHT SIDE -->
-      <div class="col-lg-3">
-        <ul class="feature-list">
-          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Online shipment tracking</li>
-          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Customer support</li>
-        </ul>
-
-        <button class="purchase-btn mt-3">PURCHASE NOW</button>
-      </div>
-
     </div>
   </div>
 
   <hr>
 
   <!-- ITEM 2 -->
-  <div class="freight-item">
+  <div class="freight-item mb-4">
     <div class="freight-header d-flex justify-content-between align-items-center">
-      <h3 class="text-pr-dark">Ship Freight</h3>
+      <h5 class="text-pr-dark m-0 fw-bold">Ship Freight</h5>
       <div class="toggle-btn">+</div>
     </div>
-    <div class="freight-body row align-items-center mt-4">
 
-      <!-- LEFT PRICE BOX -->
-      <div class="col-lg-4">
-        <div class="price-box">
-          <div class="overlay"></div>
-          <div class="price-content text-center">
-            <p class="small">START FROM</p>
-            <h1>$99</h1>
+    <div class="freight-body mt-3">
+      <div class="row g-4 align-items-center">
+
+        <div class="col-12 col-md-4 text-center">
+          <div class="price-box">
+            <div class="overlay"></div>
+            <div class="price-content">
+              <p class="small">START FROM</p>
+              <h1>$99</h1>
+            </div>
           </div>
         </div>
+
+        <div class="col-12 col-md-5">
+          <ul class="feature-list">
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Cost: $9800 per shipment</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Weight Limit: Up to 9,000 lbs</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Volume Limit: Up to 10 cubic meters</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Door-to-door delivery</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Basic insurance coverage</li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-3 text-md-start">
+          <ul class="feature-list mb-3">
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Online shipment tracking</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Customer support</li>
+          </ul>
+
+          <button class="purchase-btn w-100">PURCHASE NOW</button>
+        </div>
+
       </div>
-
-      <!-- FEATURES -->
-      <div class="col-lg-5">
-        <ul class="feature-list">
-          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Cost: $9800 per shipment</li>
-          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Weight Limit: Up to 9,000 lbs</li>
-          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Volume Limit: Up to 10 cubic meters</li>
-          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Door-to-door delivery</li>
-          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Basic insurance coverage</li>
-        </ul>
-      </div>
-
-      <!-- RIGHT SIDE -->
-      <div class="col-lg-3">
-        <ul class="feature-list">
-          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Online shipment tracking</li>
-          <li class="fs-6 text-pr-dark"></li><i class="bi bi-check-circle me-2 text-pr"></i>Customer support</li>
-        </ul>
-
-        <button class="purchase-btn mt-3">PURCHASE NOW</button>
-      </div>
-
     </div>
   </div>
 
   <hr>
 
   <!-- ITEM 3 -->
-  <div class="freight-item">
+  <div class="freight-item mb-4">
     <div class="freight-header d-flex justify-content-between align-items-center">
-      <h3 class="text-pr-dark">Airplane Freight</h3>
+      <h5 class="text-pr-dark m-0 fw-bold">Airplane Freight</h5>
       <div class="toggle-btn">+</div>
     </div>
-    <div class="freight-body row align-items-center mt-4">
 
-      <!-- LEFT PRICE BOX -->
-      <div class="col-lg-4">
-        <div class="price-box">
-          <div class="overlay"></div>
-          <div class="price-content text-center">
-            <p class="small">START FROM</p>
-            <h1>$199</h1>
+    <div class="freight-body mt-3">
+      <div class="row g-4 align-items-center">
+
+        <div class="col-12 col-md-4 text-center">
+          <div class="price-box">
+            <div class="overlay"></div>
+            <div class="price-content">
+              <p class="small">START FROM</p>
+              <h1>$199</h1>
+            </div>
           </div>
         </div>
+
+        <div class="col-12 col-md-5">
+          <ul class="feature-list">
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Cost: $59820 per shipment</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Weight Limit: Up to 998700 lbs</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Volume Limit: Up to 10 cubic meters</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Door-to-door delivery</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Basic insurance coverage</li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-3 text-md-start">
+          <ul class="feature-list mb-3">
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Online shipment tracking</li>
+            <li><i class="bi bi-check-circle me-2 text-pr"></i>Customer support</li>
+          </ul>
+
+          <button class="purchase-btn w-100">PURCHASE NOW</button>
+        </div>
+
       </div>
-
-      <!-- FEATURES -->
-      <div class="col-lg-5">
-        <ul class="feature-list">
-          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Cost: $59820 per shipment</li>
-          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Weight Limit: Up to 998700 lbs</li>
-          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Volume Limit: Up to 10 cubic meters</li>
-          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Door-to-door delivery</li>
-          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Basic insurance coverage</li>
-        </ul>
-      </div>
-
-      <!-- RIGHT SIDE -->
-      <div class="col-lg-3">
-        <ul class="feature-list">
-          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Online shipment tracking</li>
-          <li class="fs-6 text-pr-dark"><i class="bi bi-check-circle me-2 text-pr"></i>Customer support</li>
-        </ul>
-
-        <button class="purchase-btn mt-3">PURCHASE NOW</button>
-      </div>
-
     </div>
   </div>
 
@@ -820,7 +800,7 @@
 <section class="bg-section "></section>
 
 <!-- News -->
-   <section class="bg-pr-dark p-5">
+   <section class="bg-pr-dark py-5">
     <div class="container">
       <h2 class="text-white fw-bold fs-1 ">
     Company news <br>& insights
@@ -831,10 +811,7 @@
     </div>
     <div>
       <!-- Decorative lines -->
-      <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="d-flex justify-content-center pt-2"><!-- <div style="border-radius: 0 0 5px 5px; height: 5px; width: 30px; background-color: #0f372e;"></div> -->
-        <div class="mx-2" style=" height: 1px; width: 800px; background:linear-gradient(to left, #ff7a45, transparent) ;">
-        </div>
-      </div>
+      <div class="flex-grow-1 mx-2 decorative-line left-line"></div>
     </div>
   </div>
 
@@ -958,7 +935,7 @@
   </div>
 </section>
 
-
+</div>
    
 
 
