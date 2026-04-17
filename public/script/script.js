@@ -14,47 +14,47 @@ window.addEventListener("scroll", function () {
 });
 
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-const video = document.querySelector(".plane-img");
-const targetSection = document.querySelector(".video-full-section");
+// const video = document.querySelector(".plane-img");
+// const targetSection = document.querySelector(".video-full-section");
 
-// STEP 1 → Expand & Fix
-ScrollTrigger.create({
-  trigger: ".hero-section",
-  start: "top top",
-  end: "bottom top",
-  scrub: true,
+// // STEP 1 → Expand & Fix
+// ScrollTrigger.create({
+//   trigger: ".hero-section",
+//   start: "top top",
+//   end: "bottom top",
+//   scrub: true,
 
-  onEnter: () => {
-    video.classList.add("video-fixed");
-  },
+//   onEnter: () => {
+//     video.classList.add("video-fixed");
+//   },
 
-  onLeave: () => {
-  video.classList.remove("video-fixed");
+//   onLeave: () => {
+//   video.classList.remove("video-fixed");
 
-  // move to section
-  targetSection.appendChild(video);
+//   // move to section
+//   targetSection.appendChild(video);
 
-  // 🔥 FORCE full width properly
-  gsap.set(video, {
-    position: "relative",
-    width: "100%",
-    height: "100%",
-    maxWidth: "100%",
-    x: 0,
-    y: 0,
-    clearProps: "transform",
-    borderRadius: "0px"
-  });
-},
+//   // 🔥 FORCE full width properly
+//   gsap.set(video, {
+//     position: "relative",
+//     width: "100%",
+//     height: "100%",
+//     maxWidth: "100%",
+//     x: 0,
+//     y: 0,
+//     clearProps: "transform",
+//     borderRadius: "0px"
+//   });
+// },
 
-  onEnterBack: () => {
-    // when scrolling back up
-    document.querySelector(".video-wrapper").appendChild(video);
-    video.classList.remove("video-fixed");
-  }
-});
+//   onEnterBack: () => {
+//     // when scrolling back up
+//     document.querySelector(".video-wrapper").appendChild(video);
+//     video.classList.remove("video-fixed");
+//   }
+// });
 
 
 gsap.registerPlugin(ScrollTrigger);

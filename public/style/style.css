@@ -154,7 +154,7 @@ body {
 
 
 .hero-title {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 700;
     line-height: 1.2;
     margin-top: 100px;
@@ -259,7 +259,7 @@ body {
 }
 
 .plane-img {
-  max-width: 400px;
+  max-width: 550px;
   width: 100%;
   object-fit: cover;
   /* border-radius: 12px; */
@@ -328,7 +328,7 @@ body {
 
 
 .zoomship-img{
-  width: 500px;
+  width: 600px;
   will-change: transform;
   /* transition: transform 0.2s ease; */
 }
