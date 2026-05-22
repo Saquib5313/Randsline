@@ -30,7 +30,7 @@
     <!-- LOGO -->
     <a class="navbar-brand d-flex align-items-center gap-2" href="#">
       <span class="logo-icon"></span>
-      <strong class="text-uppercase"><span class="text-danger">R</span>and<span class="text-danger">s</span>line</strong>
+      <strong class="text-uppercase fs-4"><span class="text-danger">R</span>and<span class="text-danger">s</span>line</strong>
     </a>
 
     <!-- TOGGLER -->
@@ -53,8 +53,11 @@
 
       <!-- RIGHT SIDE -->
       <div class="d-lg-flex align-items-center gap-3 text-center mt-3 mt-lg-0">
-        <span class="email-text d-none d-lg-block">info@randsline.com</span>
-        <a href="#" class="btn quote-btn">GET A QUOTE</a>
+        <a href="mailto:rajiv@randsline.com" target="_blank" class="d-flex align-items-center text-decoration-none fs-8 text-white">
+         rajiv@randsline.com
+        </a>
+        <!-- <span class="email-text d-none d-lg-block">rajiv@randsline.com</span> -->
+        <a href="/contact.html" class="btn quote-btn">GET A QUOTE</a>
       </div>
 
     </div>
@@ -121,7 +124,7 @@
                  <div>
             <p class="text-muted fs-7 p-0 m-0 mb-2 text-uppercase">email address</p>
             <a href="#" class="d-flex align-items-center text-decoration-none fw-semibold text-pr-dark">
-          info@randsline.com
+          rajiv@randsline.com
         </a>
           </div>
             </div>
@@ -149,24 +152,28 @@
 
           <h3 class="mb-4 text-white fw-bold">Ask more question</h3>
 
+           <form action="https://formeasy-tt5oyjktnq-uc.a.run.app/submit"method="POST">
+          
+      <input type="hidden" name="access_key" value="6cf21c55-5aa8-4f29-a53d-aaa99a98a4b4">
           <div class="row g-3">
+           
             <div class="col-6">
               <label>Your name</label>
-              <input type="text" placeholder="Enter here">
+              <input type="text" name="name" placeholder="Enter here">
             </div>
             <div class="col-6">
               <label>Email address</label>
-              <input type="email" placeholder="Enter here">
+              <input type="email" name="email" placeholder="Enter here">
             </div>
             <div class="col-12 col-lg-12">
                 <label for="">Your message</label>
-                <textarea name="" id="" rows="10" placeholder="Enter here"></textarea>
+                <textarea name="message" id="" rows="10" placeholder="Enter here"></textarea>
             </div>
           </div>
 
           <button class="btn quote-btn w-100 mt-4">Get A Free Quote</button>
 
-          
+        </form>
 
         </div>
       </div>
@@ -198,54 +205,54 @@
     <div class="row gy-4">
 
       <!-- LEFT -->
-      <div class="col-12 col-lg-3">
+      <div class="col-12 col-lg-4">
         <h4 class="fw-bold text-pr-dark mb-3">Randsline</h4>
 
         <p class="text-muted mb-4">
           A logistics firm is a business entity formed by one or more logistics experts to engage in the management and coordination of transportation, warehousing, and distribution of goods.
         </p>
 
-        <a href="#" class="d-flex align-items-center text-decoration-none fw-semibold text-pr-dark">
+        <a href="mailto:rajiv@randsline.com" target="_blank" class="d-flex align-items-center text-decoration-none fw-semibold text-pr-dark">
           <img src="https://cdn.prod.website-files.com/68060a1549323df089f74646/68067bf53c69b3d0ea47bf91_Email.png"
                style="width: 28px; height: 28px;"
                class="me-2" alt="">
-          info@randsline.com
+         rajiv@randsline.com
         </a>
       </div>
 
       <!-- PAGES -->
-      <div class="col-6 col-lg-3 ps-5">
+      <div class="col-6 col-lg-4 ps-5">
         <h6 class="footer-title">Pages</h6>
         <ul class="list-unstyled footer-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <!-- <li><a href="#">Blogs</a></li> -->
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
       </div>
 
       <!-- UTILITIES -->
-      <div class="col-6 col-lg-3">
+      <!-- <div class="col-6 col-lg-3">
         <h6 class="footer-title">Utility Pages</h6>
         <ul class="list-unstyled footer-links">
           <li><a href="#">Privacy Policies</a></li>
           <li><a href="#">Terms & Conditions</a></li>
         </ul>
-      </div>
+      </div> -->
 
       <!-- CONTACT -->
-      <div class="col-12 col-lg-3">
+      <div class="col-12 col-lg-4">
         <h6 class="footer-title">Contact Us</h6>
         <ul class="list-unstyled footer-links">
           <li>
-            <i class="bi bi-telephone-fill me-2 text-pr"></i> +91 0987654432
+            <i class="bi bi-telephone-fill me-2 text-pr"></i> +91 9801067337 / +91 9851056337
           </li>
           <li>
-            <i class="bi bi-envelope-fill me-2 text-pr"></i> info@randsline.com
+            <i class="bi bi-envelope-fill me-2 text-pr"></i> rajiv@randsline.com
           </li>
-          <li>
+          <!-- <li>
             <i class="bi bi-clock-fill me-2 text-pr"></i> Weekdays 10:00 am - 9:00 pm (EST)
-          </li>
+          </li> -->
         </ul>
       </div>
 
@@ -259,6 +266,7 @@
     </div>
   </div>
 </section>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
