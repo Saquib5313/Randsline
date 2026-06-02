@@ -498,7 +498,7 @@ display:none;
 }
 
 .logo-track img {
-  height: 30px;
+  height: 80px;
   object-fit: contain;
   margin-right: 100px; /* 👈 control gap here */
   transition: transform 0.3s ease;
@@ -1228,4 +1228,45 @@ hr {
 .user-icon i{
     font-size:28px;
     color:#6c757d;
+}
+
+
+
+
+/* WhatsApp Floating Button */
+.whatsapp-float{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 32px;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    transition: all .3s ease;
+}
+
+.whatsapp-float:hover{
+    background: #1ebe5d;
+    color: #fff;
+    transform: scale(1.08);
+}
+
+.whatsapp-icon{
+  font-size: 26px;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+    .whatsapp-float{
+        width:55px;
+        height:55px;
+        font-size:28px;
+        bottom:15px;
+        right:15px;
+    }
 }
